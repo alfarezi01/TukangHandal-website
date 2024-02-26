@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.deskframe, .bg {
+  width: 1535px;
+  height: 774px;
+  background: #ffc001;
+}
+
+
+.v0_4 {
+  height: auto; /* Adjusted height to auto */
+  padding: 20px; /* Added padding */
+}
+
+.v0_8 {
+    width: 50%; /* Adjusted width percentage */
+    height: auto;
+    max-width: 300px; /* Added max-width for smaller screens */
+    margin: 0 auto; /* Centered horizontally */
+    height: auto; /* Adjusted height to auto */
+    border-radius: 50%;
+    position: absolute; /* Mengubah posisi menjadi absolut */
+    top: 50%; /* Menempatkan di tengah vertikal halaman */
+    left: 17%; /* Menempatkan di tengah horizontal halaman */
+    transform: translate(-50%, -50%); /* Menggeser ke tengah */
+  }
+
+.marking {
+  width: 70%; /* Adjusted width percentage */
+  max-width: 400px; /* Added max-width for smaller screens */
+  text-align: center; /* Centered text */
+  margin: 20px auto; /* Centered horizontally */
+}
+
+.v0_10 {
+  width: 70%; /* Adjusted width percentage */
+  max-width: 500px; /* Added max-width for smaller screens */
+  margin: 0 auto; /* Centered horizontally */
+  height: 5px;
+}
+
+.v0_169 {
+  width: 100%;
+  height: auto; /* Adjusted height to auto */
+  background: url("../images/v0_169.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.heading1 {
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 200px;
+    left: 55%;
+    transform: translateX(30%);
+    font-family: Poppins;
+    font-weight: bolder;
+    font-size: 100px;
+    opacity: 1;
+    text-align: center;
+  }
+
+.heading2 {
+    max-width: 100%; /* Added max-width for smaller screens */
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 300px;
+    left: 37%; /* Align to center horizontally */
+    transform: translateX(80%); /* Center horizontally */
+    font-family: Poppins;
+    font-weight: bold; /* Changed to lowercase */
+    font-size: 50px;
+    opacity: 1;
+    text-align: center;
+    line-height: 55px;
+}
+.paragh {
+  width: 100%; /* Adjusted width percentage */
+  max-width: 430px; /* Added max-width for smaller screens */
+  text-align: center; /* Centered text */
+  margin: 20px auto; /* Centered horizontally */
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 410px;
+  left: 9%;
+  transform: translateX(186%);
+  font-family: Poppins;
+  font-weight: Regular;
+  font-size: 24px;
+  opacity: 1;
+}
+
+.button {
+    width: 100%; /* Adjusted width percentage */
+    max-width: 220px; /* Added max-width for smaller screens */
+    margin: 400px auto 0; /* Centered horizontally and adjusted top margin */
+    border-radius: 24px; /* Combined border-radius */
+    padding: 5px 0; /* Added padding for better appearance */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-weight: bolder;
+    font-size: 24px;
+    position: absolute;
+    top: 12%; /* Moved below .paragh */
+    left: 70%;
+    transform: translateX(-40%); /* Center horizontally */
+  
+  }
+  
