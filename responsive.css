@@ -8,111 +8,86 @@ body {
   padding: 0;
 }
 
-.deskframe, .bg {
-  width: 1535px;
-  height: 774px;
-  background: #ffc001;
-}
-
-
-.v0_4 {
-  height: auto; /* Adjusted height to auto */
-  padding: 20px; /* Added padding */
-}
-
-.v0_8 {
-    width: 50%; /* Adjusted width percentage */
-    height: auto;
-    max-width: 300px; /* Added max-width for smaller screens */
-    margin: 0 auto; /* Centered horizontally */
-    height: auto; /* Adjusted height to auto */
-    border-radius: 50%;
-    position: absolute; /* Mengubah posisi menjadi absolut */
-    top: 50%; /* Menempatkan di tengah vertikal halaman */
-    left: 17%; /* Menempatkan di tengah horizontal halaman */
-    transform: translate(-50%, -50%); /* Menggeser ke tengah */
-  }
-
-.marking {
-  width: 70%; /* Adjusted width percentage */
-  max-width: 400px; /* Added max-width for smaller screens */
-  text-align: center; /* Centered text */
-  margin: 20px auto; /* Centered horizontally */
-}
-
-.v0_10 {
-  width: 70%; /* Adjusted width percentage */
-  max-width: 500px; /* Added max-width for smaller screens */
-  margin: 0 auto; /* Centered horizontally */
-  height: 5px;
-}
-
-.v0_169 {
+.bg {
   width: 100%;
-  height: auto; /* Adjusted height to auto */
-  background: url("../images/v0_169.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  height: 100vh;
+  background: #ffc001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  max-width: 600px; /* Adjusted max-width for content */
+  text-align: center;
+  display: flex; /* Added flex display */
+  justify-content: space-between; /* Items spaced evenly */
+  
+}
+
+.logo {
+  flex: 1; /* Take 1/3 of the space */
+
+}
+
+.logo img {
+  width: 100%;
+  max-width: 450px;
+}
+
+.text-section {
+  flex: 2; /* Take 2/3 of the space */
+  text-align: left; /* Align text to the left */
 }
 
 .heading1 {
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 200px;
-    left: 55%;
-    transform: translateX(30%);
-    font-family: Poppins;
-    font-weight: bolder;
-    font-size: 100px;
-    opacity: 1;
-    text-align: center;
-  }
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 94px;
+ 
+}
 
 .heading2 {
-    max-width: 100%; /* Added max-width for smaller screens */
-    color: rgba(0,0,0,1);
-    position: absolute;
-    top: 300px;
-    left: 37%; /* Align to center horizontally */
-    transform: translateX(80%); /* Center horizontally */
-    font-family: Poppins;
-    font-weight: bold; /* Changed to lowercase */
-    font-size: 50px;
-    opacity: 1;
-    text-align: center;
-    line-height: 55px;
-}
-.paragh {
-  width: 100%; /* Adjusted width percentage */
-  max-width: 430px; /* Added max-width for smaller screens */
-  text-align: center; /* Centered text */
-  margin: 20px auto; /* Centered horizontally */
-  color: rgba(0,0,0,1);
-  position: absolute;
-  top: 410px;
-  left: 9%;
-  transform: translateX(186%);
-  font-family: Poppins;
-  font-weight: Regular;
-  font-size: 24px;
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 50px;
+
 }
 
 .button {
-    width: 100%; /* Adjusted width percentage */
-    max-width: 220px; /* Added max-width for smaller screens */
-    margin: 400px auto 0; /* Centered horizontally and adjusted top margin */
-    border-radius: 24px; /* Combined border-radius */
-    padding: 5px 0; /* Added padding for better appearance */
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Poppins;
-    font-weight: bolder;
-    font-size: 24px;
-    position: absolute;
-    top: 12%; /* Moved below .paragh */
-    left: 70%;
-    transform: translateX(-40%); /* Center horizontally */
-  
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 44px;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (min-width: 600px) {
+  .content {
+    max-width: 70%;
   }
-  
+
+  .button {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .content {
+    max-width: 80%;
+  }
+
+  .button {
+    font-size: 24px;
+  }
+}
